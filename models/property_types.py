@@ -21,9 +21,9 @@ class PropertyType(str, Enum):
     warehouse = 'warehouse'
     pg = 'pg'
     duplex = 'duplex'
-    restraunt = 'restraunt'
     townhouse = 'townhouse'
     hotel_apartment = "hotel_apartment"
+    restraunt = 'restraunt'
 
 
 class ListingType(str, Enum):
@@ -39,6 +39,9 @@ class ResidentialPropertyType(str, Enum):
     builder_floor = 'builder_floor'
     penthouse = 'penthouse'
     villa = 'villa'
+    duplex = 'duplex'
+    townhouse = 'townhouse'
+    hotel_apartment = "hotel_apartment"
     independent_house = 'independent_house'
 
 class PayingGuestPropertyType(str,Enum):
@@ -51,6 +54,7 @@ class OfficeSpacePropertyType(str, Enum):
 
 class CommercialPropertyType(str, Enum):
     shop = 'shop'
+    restraunt = 'restraunt'
     showroom = 'showroom'
     warehouse = 'warehouse'
 
