@@ -15,6 +15,7 @@ ADD requirements.txt /home/app
 RUN pip install --upgrade pip && \
     pip install --trusted-host pypi.python.org -r requirements.txt && \
     python -m spacy download en_core_web_sm
+    python -m spacy download en_core_web_lg
 
 RUN apt-get clean && apt-get update && apt-get install -y locales locales-all
 
