@@ -18,6 +18,8 @@ UNIQUE_TOKEN_THRESHOLD = 0.43
 TOKEN_THRESHOLD = 15
 FURNISH_TOKEN = "__SPECIALTOKEN__"
 
+LC_ALL="en_US.UTF-8"
+LC_CTYPE="en_US.UTF-8"
 ps = PorterStemmer()
 inflect_engine = inflect.engine()
 locale.setlocale(locale.LC_MONETARY, 'en_IN')
