@@ -4,11 +4,11 @@ import openai
 import json
 import re
 
+from dotenv import load_dotenv
 from fastapi import FastAPI, HTTPException
 from fastapi.responses import HTMLResponse
 from prompts import generate_description
 from fastapi.encoders import jsonable_encoder
-openai.api_key = "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"
 from prompts import generate_description1,generate_description_fine_tune
 from models.property_types import (
     ResidentialListingData,
@@ -31,8 +31,11 @@ app = FastAPI(
     version="2.0.0"
 )
 
-openai.api_key = os.getenv('openai.api_key')
 
+# loading environment variables from .env file
+load_dotenv()
+
+openai.api_key = os.getenv('openai.api_key')
 
 @app.get("/")
 async def root():
