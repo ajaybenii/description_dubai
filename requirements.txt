@@ -11,5 +11,5 @@ nltk==3.6.2
 inflect==5.3.0
 aiohttp==3.7.4.post0
 openai
-en_core_web_lg
-en_core_web_sm
+spacy download en_core_web_lg
+spacy download en_core_web_sm
